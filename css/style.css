@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -436,6 +437,7 @@ h5 span {
     margin: 0 auto;
 }
 
+
 .video, .textabout {
     width: 480px;
     float: left;
@@ -751,7 +753,7 @@ footer div:last-child {
 }
 
 
-#popup_wrapper, #popup_wrapper2, #popup_wrapper3, #popup_wrapper4, #popup_wrapper5, #popup_wrapper6  {
+#popup_wrapper, #popup_wrapper2, #popup_wrapper3, #popup_wrapper4, #popup_wrapper5, #popup_wrapper6, #popup_wrapper7, #popup_wrapper8, #popup_wrapper9, #popup_wrapper10, #popup_wrapper11  {
     background: url(/css/img/opacity.png) repeat;
     width: 100%;
     top: 0;
@@ -790,6 +792,28 @@ footer div:last-child {
 	right:0;
 }
 
+#popup_wrapper7 .popup_body, #popup_wrapper8 .popup_body, #popup_wrapper9 .popup_body, #popup_wrapper10 .popup_body, #popup_wrapper11 .popup_body {
+    width: 265px;
+    height: 170px;
+    position:fixed ;
+    z-index: 600;
+	margin:10% auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.popup_body #popup_close7, .popup_body #popup_close8, .popup_body #popup_close9, .popup_body #popup_close10, .popup_body #popup_close11 {
+    background: url(/css/img/close.png) no-repeat right top;
+    color: #e61a4e;
+    line-height: 29px;
+    height: 29px;
+    position: relative;
+    z-index: 650;
+    display: block;
+}
+
 .popup_body #popup_close, .popup_body #popup_close2, .popup_body #popup_close3, .popup_body #popup_close4, .popup_body #popup_close5, .popup_body #popup_close6 {
     background: url(/css/img/close.png) no-repeat right top;
     color: #e61a4e;
@@ -814,6 +838,26 @@ footer div:last-child {
 	height:250px !important;
 }
 
+
+#popup_wrapper7 .popup_content, #popup_wrapper8 .popup_content, #popup_wrapper9 .popup_content, #popup_wrapper10 .popup_content, #popup_wrapper11 .popup_content {
+    text-align: center;
+    color: #fff;
+    margin: 5px; 
+    padding: 0;
+    display: block;
+	
+}
+
+.popup_content form {
+	width:235px !important;
+	height:86px !important;
+	background-color:#FFF;
+	vertical-align:middle !important;
+	text-align:center;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #999;
+    padding: 20px;
+}
 
 #myElement2_display_button {
 	background:none !important;
