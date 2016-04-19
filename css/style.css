@@ -538,6 +538,32 @@ h6 {
     font-family: ekibold;
 }
 
+.progress_bar {
+    width: 100%;
+    overflow: hidden;
+    background:#cbb29e;
+    background-size: cover;
+    text-align: center;
+    border: solid .75em white;
+    border-top: none;
+	border-bottom:none;
+    position: relative;
+    overflow: hidden;	
+}
+
+.progress_bar h2 {
+    color: white;
+}
+
+.progress_bar .gradient {
+    width: 17.7em;
+    background: linear-gradient(left, #efe7e1 0%, #cbb29e 100%);
+    background: -webkit-linear-gradient(left, #efe7e1 0%, #cbb29e 100%);
+    background: -moz-linear-gradient(left, #efe7e1 0%, #cbb29e 100%);
+    background: -ms-linear-gradient(left, #efe7e1 0%, #cbb29e 100%);
+    background: -o-linear-gradient(left, #efe7e1 0%, #cbb29e 100%);
+}
+
 .help {
     width: 100%;
     overflow: hidden;
