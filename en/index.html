@@ -18,6 +18,9 @@
         </script>
         <link rel="shortcut icon" href="css/img/fav.png">
         <script type="text/javascript" src="/jwplayer/jwplayer.js"></script>
+        <link rel="stylesheet" href="css/ui.css">
+        <link rel="stylesheet" href="css/ui.progress-bar.css">
+        <link media="only screen and (max-device-width: 480px)" href="css/ios.css" type="text/css" rel="stylesheet" />
         <!--[if (lte IE 8)]>
         <script src="js/html5.js"></script>
         <![endif]-->
@@ -160,6 +163,30 @@ click the button “Become a sponsor”.
         <p>We also would like to thank for help in the 
 project Mikhail Polyansky, Alexander Gurianov, Andrey Toloshny, Denis Shuvalov, Alexander Panfilov, Julia Dmitrieva<br>and others.</p>
         </div>
+        </div>
+        
+        <div class="progress_bar">
+          <div class="wow fadeIn">	
+        	<div class="decor">
+            	<div class="empty white wow fadeInLeftBig"></div>
+                <div class="empty"><img src="css/img/stupa_text.png" alt="stupa"></div>
+      			<div class="empty white wow fadeInRightBig"></div>
+            </div>
+            <h2>Собрано средств</h2>
+           <div class="gradient"></div>
+         </div>  
+         <p>&nbsp;</p>
+         <h3 class="wow fadeIn">To create the movie we must collect <strong>1 300 000 rubles</strong>.</h3>
+         
+          <!-- Progress bar -->
+    <div id="progress_bar" class="ui-progress-bar ui-container">
+      <div class="ui-progress" style="width: 6.5%;">
+        <span class="ui-label" style="display:none;">At the moment collected <b class="value">85 000 rubles</b></span>
+      </div>
+    </div>
+    <!-- /Progress bar -->
+
+      <p class="youmay wow fadeIn">На данный момент собрано 85 000 рублей.</p>
         </div>
         
         <div class="help" id="help">
@@ -347,6 +374,7 @@ $('#popup_close6').click(function(e){
 	});
 });
 </script>  
+<script src="js/progress.js" type="text/javascript" charset="utf-8"></script>
         
     </body>
         </html>
