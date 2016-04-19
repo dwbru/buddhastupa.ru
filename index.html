@@ -6,7 +6,8 @@
         <meta name="description" content="Буддийские ступы: чудеса и факты" />
         <meta name="keywords" content="ступа, буддизм, будда, ваджраяна, алмазный, путь, просветление, медитация" />
         <meta property="og:type" content="article">
-        <meta property="og:image" content="https://buddhastupa.ru/css/img/teaser.jpg">
+        <meta property="og:url" content="http://buddhastupa.ru">
+        <meta property="og:image" content="http://buddhastupa.ru/css/img/teaser.jpg">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="format-detection" content="telephone=no">
         <link href="css/style.css" rel="stylesheet">
@@ -21,6 +22,10 @@
         <!--[if (lte IE 8)]>
         <script src="js/html5.js"></script>
         <![endif]-->
+        <meta name="viewport" content="width=device-width">  
+        <link rel="stylesheet" href="css/ui.css">
+        <link rel="stylesheet" href="css/ui.progress-bar.css">
+        <link media="only screen and (max-device-width: 480px)" href="css/ios.css" type="text/css" rel="stylesheet" />
         </head>
     <body>
     <div class="wrapper wow fadeIn">
@@ -166,6 +171,32 @@
         </div>
         </div>
         
+        
+        <div class="progress_bar">
+          <div class="wow fadeIn">	
+        	<div class="decor">
+            	<div class="empty white wow fadeInLeftBig"></div>
+                <div class="empty"><img src="css/img/stupa_text.png" alt="stupa"></div>
+      			<div class="empty white wow fadeInRightBig"></div>
+            </div>
+            <h2>Собрано средств</h2>
+           <div class="gradient"></div>
+         </div>  
+         <p>&nbsp;</p>
+         <h3 class="wow fadeIn">Для создания фильма необходимо собрать <strong>1 300 000 рублей</strong>.</h3>
+         
+          <!-- Progress bar -->
+    <div id="progress_bar" class="ui-progress-bar ui-container">
+      <div class="ui-progress" style="width: 5.6%;">
+        <span class="ui-label" style="display:none;">Собрано <b class="value">73 000 рублей</b></span>
+      </div>
+    </div>
+    <!-- /Progress bar -->
+
+      <p class="youmay wow fadeIn">На данный момент собрано 73 000 рублей.</p>
+        </div>
+        	
+         
         <div class="help" id="help">
             <div class="wow fadeIn">
             <div class="decor">
@@ -218,6 +249,8 @@
                 </div>
             </footer>
         </div>
+        
+        
   <div id="popup_wrapper" class="hide">
   <div class="popup_body"> <a id="popup_close" href="/"></a>
     <div class="popup_content">
@@ -447,5 +480,8 @@ $('#popup_close11').click(function(e){
 	});
 });
 </script>
+
+<script src="js/progress.js" type="text/javascript" charset="utf-8"></script>
+  
  </body>
         </html>
