@@ -780,7 +780,7 @@ footer div:last-child {
 
 
 #popup_wrapper, #popup_wrapper2, #popup_wrapper3, #popup_wrapper4, #popup_wrapper5, #popup_wrapper6, #popup_wrapper7, #popup_wrapper8, #popup_wrapper9, #popup_wrapper10, #popup_wrapper11  {
-    background: url(/css/img/opacity.png) repeat;
+    background: url(../../css/img/opacity.png) repeat;
     width: 100%;
     top: 0;
     left: 0;
@@ -831,7 +831,7 @@ footer div:last-child {
 }
 
 .popup_body #popup_close7, .popup_body #popup_close8, .popup_body #popup_close9, .popup_body #popup_close10, .popup_body #popup_close11 {
-    background: url(/css/img/close.png) no-repeat right top;
+    background: url(../../css/img/close.png) no-repeat right top;
     color: #e61a4e;
     line-height: 29px;
     height: 29px;
@@ -841,7 +841,7 @@ footer div:last-child {
 }
 
 .popup_body #popup_close, .popup_body #popup_close2, .popup_body #popup_close3, .popup_body #popup_close4, .popup_body #popup_close5, .popup_body #popup_close6 {
-    background: url(/css/img/close.png) no-repeat right top;
+    background: url(../../css/img/close.png) no-repeat right top;
     color: #e61a4e;
     line-height: 29px;
     height: 29px;
@@ -860,8 +860,8 @@ footer div:last-child {
 }
 
 .popup_content iframe{
-	width:535px !important;
-	height:250px !important;
+	width:100% !important;
+	height:480px !important;
 }
 
 

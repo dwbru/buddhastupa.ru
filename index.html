@@ -94,27 +94,7 @@
                 <img src="css/img/preview.jpg" style="cursor:pointer"/>
             </div>
             <div style="display:none">
-
-
-                <!--
-                 <div id="myElement">Загрузка видео...</div>
-                      <script type="text/javascript">
-                         jwplayer("myElement").setup({
-                             primary:"html5",
-                             file: "https://youtu.be/-ZSX3OwvrRY",
-                             width: 480,
-                             height: 286,
-                             title: "БУДДИЙСКИЕ СТУПЫ",
-                             controls:true,
-                             autostart:true,
-                             mute:false,
-                             stretching:"uniform"
-                 });
-             </script> -->
-
-                <iframe width="480" height="286" src="https://www.youtube.com/embed/dgVqC_k8hWw" frameborder="0"
-                        allowfullscreen></iframe>
-
+                <iframe width="480" height="286" src="https://www.youtube.com/embed/dgVqC_k8hWw" frameborder="0" allowfullscreen></iframe>
             </div>
 
         </div>
@@ -182,7 +162,6 @@
     </div>
 </div>
 
-
 <div class="progress_bar">
     <div class="wow fadeIn">
         <div class="decor">
@@ -225,7 +204,7 @@
     <div class="buttons">
         <h3 align="center">Помощь в рублях через Яндекс.Деньги или банковскую карту.</h3>
         <div class="cont1">
-            <a href="" id="popup_link">
+            <a href="" id="popup_link100">
                 <div class="but wow flipInX">100 рублей</div>
             </a>
             <a href="" id="popup_link1000">
@@ -240,7 +219,7 @@
         </div>
         <div class="cont2">
             <a href="" id="popup_link108">
-                <div class="but wow flipInX" id="sum">
+                <div class="but wow flipInX" id="sum2">
                     Другая сумма
                 </div>
             </a>
@@ -282,34 +261,14 @@
         </div>
     </footer>
 </div>
-
-
-<div id="popup_wrapper" class="hide">
-    <div class="popup_body"><a id="popup_close" href="/"></a>
-        <div class="popup_content">
-
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/-ZSX3OwvrRY" frameborder="0"
-                    allowfullscreen></iframe>
-            <!--
-                <div id="myElement2">Загрузка видео...</div>
-                 <script type="text/javascript">
-                    jwplayer("myElement2").setup({
-                     primary:"html5",
-                     file: "https://youtu.be/-ZSX3OwvrRY",
-                     image: "/jwplayer/video.jpg",
-                     width: 853,
-                     height: 480,
-                     controls:true,
-                     autostart:false,
-                     mute:false,
-            });
-        </script>
+<div>
+    <div id="popup_wrapper" class="hide">
+        <div class="popup_body"><a id="popup_close" href="/"></a>
+            <div class="popup_content">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/-ZSX3OwvrRY" frameborder="0" allowfullscreen></iframe>
             </div>
-            -->
         </div>
     </div>
-
-
     <div id="popup_wrapper2" class="hide">
         <div class="popup_body"><a id="popup_close2" href="/"></a>
             <div class="popup_content">
@@ -444,118 +403,119 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#popup_link').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper').removeClass('hide');
-        });
-        $('#popup_link100').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper2').removeClass('hide');
-        });
-        $('#popup_link1000').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper4').removeClass('hide');
-        });
-        $('#popup_link500').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper3').removeClass('hide');
-        });
-        $('#popup_link5000').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper5').removeClass('hide');
-        });
-        $('#popup_link108').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper6').removeClass('hide');
-        });
-        $('#popup_link5e').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper7').removeClass('hide');
-        });
-        $('#popup_link10e').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper9').removeClass('hide');
-        });
-        $('#popup_link50e').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper8').removeClass('hide');
-        });
-        $('#popup_link100e').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper10').removeClass('hide');
-        });
-        $('#popup_link108e').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper11').removeClass('hide');
-        });
-        $('#popup_close').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper').addClass('hide');
-          jwplayer("myElement2").stop();
-        });
-        $('#popup_close2').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper2').addClass('hide');
-        });
-        $('#popup_close3').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper3').addClass('hide');
-        });
-        $('#popup_close4').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper4').addClass('hide');
-        });
-        $('#popup_close5').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper5').addClass('hide');
-        });
-        $('#popup_close6').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper6').addClass('hide');
-        });
-        $('#popup_close7').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper7').addClass('hide');
-        });
-        $('#popup_close8').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper8').addClass('hide');
-        });
-        $('#popup_close9').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper9').addClass('hide');
-        });
-        $('#popup_close10').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper10').addClass('hide');
-        });
-        $('#popup_close11').click(function (e) {
-          e.preventDefault();
-          $('#popup_wrapper11').addClass('hide');
-        });
-      });
-    </script>
-
-    <script src="js/progress.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-      ga('create', 'UA-88269141-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#popup_link').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper').removeClass('hide');
+    });
+    $('#popup_link100').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper2').removeClass('hide');
+    });
+    $('#popup_link1000').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper4').removeClass('hide');
+    });
+    $('#popup_link500').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper3').removeClass('hide');
+    });
+    $('#popup_link5000').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper5').removeClass('hide');
+    });
+    $('#popup_link108').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper6').removeClass('hide');
+    });
+    $('#popup_link5e').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper7').removeClass('hide');
+    });
+    $('#popup_link10e').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper9').removeClass('hide');
+    });
+    $('#popup_link50e').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper8').removeClass('hide');
+    });
+    $('#popup_link100e').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper10').removeClass('hide');
+    });
+    $('#popup_link108e').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper11').removeClass('hide');
+    });
+    $('#popup_close').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper').addClass('hide');
+      // jwplayer("myElement2").stop();
+    });
+    $('#popup_close2').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper2').addClass('hide');
+    });
+    $('#popup_close3').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper3').addClass('hide');
+    });
+    $('#popup_close4').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper4').addClass('hide');
+    });
+    $('#popup_close5').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper5').addClass('hide');
+    });
+    $('#popup_close6').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper6').addClass('hide');
+    });
+    $('#popup_close7').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper7').addClass('hide');
+    });
+    $('#popup_close8').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper8').addClass('hide');
+    });
+    $('#popup_close9').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper9').addClass('hide');
+    });
+    $('#popup_close10').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper10').addClass('hide');
+    });
+    $('#popup_close11').click(function (e) {
+      e.preventDefault();
+      $('#popup_wrapper11').addClass('hide');
+    });
+  });
+</script>
+
+<script src="js/progress.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-88269141-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

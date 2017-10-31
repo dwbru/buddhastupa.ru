@@ -831,7 +831,7 @@ footer div:last-child {
 }
 
 .popup_body #popup_close7, .popup_body #popup_close8, .popup_body #popup_close9, .popup_body #popup_close10, .popup_body #popup_close11 {
-    background: url(/css/img/close.png) no-repeat right top;
+    background: url(../css/img/close.png) no-repeat right top;
     color: #e61a4e;
     line-height: 29px;
     height: 29px;
