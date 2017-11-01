@@ -1,11 +1,19 @@
 {
   "name": "buddhastupa.ru",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://github.com/dwbru/buddhastupa.ru",
   "author": "Brizjin Ivan <brizjin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "exports-loader": "^0.6.4",
     "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "wowjs": "^1.1.3"
   }
 }
