@@ -1,6 +1,20 @@
 import WOW from 'wowjs';
+// import progress from 'progress';
+// import progress from '../js/progress';
+// require('html5shiv');
+// import $ from 'jquery';
+// import jQuery from 'jquery';
 
-new WOW().init();
+// console.log("index.js");
+// console.log("env=" + process.env.NODE_ENV);
+if(process.env.NODE_ENV === 'development' ) {
+  require('../index.html');
+  require('../en/index.html');
+}
+if(process.env.NODE_ENV === 'production' ) {
+  new WOW().init();
+}
+require('../js/progress');
 
 $(document).ready(function () {
 
