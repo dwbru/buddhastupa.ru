@@ -72,15 +72,15 @@ $(function() {
   $('#progress_bar .ui-progress').css('width', '7%');
 
   // Simulate some progress
-  $('#progress_bar .ui-progress').animateProgress(5.6, function() {
-    $(this).animateProgress(5.6, function() {
-      setTimeout(function() {
-        $('#progress_bar .ui-progress').animateProgress(5.6, function() {
+  $('#progress_bar .ui-progress').animateProgress(36, function() {
+     // $(this).animateProgress(50, function() {
+      // setTimeout(function() {
+      //   $('#progress_bar .ui-progress').animateProgress(70, function() {
           $('#main_content').slideDown();
           $('#fork_me').fadeIn();
-        });
-      }, 2000);
-    });
+        // });
+      // }, 2000);
+     // });
   });
   
 });
