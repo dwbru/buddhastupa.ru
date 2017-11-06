@@ -10,7 +10,7 @@ import $ from 'jquery';
 // console.log("env=" + process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   require('../index.html');
-  require('../en/index.html');
+  require('../index_en.html');
 }
 if (process.env.NODE_ENV === 'production') {
   new WOW().init();
