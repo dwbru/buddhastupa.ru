@@ -1,4 +1,4 @@
-// const path = require('path');
+const path = require('path');
 const webpack = require('webpack');
 // import webpack from 'webpack';
 // const common = require('./configs/common');
@@ -8,9 +8,8 @@ const common = function () {
   return {
     entry: './src/index.js',
     output: {
+      path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'
-      // ,
-      // path: path.resolve(__dirname, 'dist')
     },
     module: {
       rules: [
@@ -62,7 +61,9 @@ module.exports = function(env) {
       plugins: [
         new webpack.DefinePlugin({
           'process.env.NODE_ENV': JSON.stringify('production')
-        })]
+        }),
+        new UglifyJSPlugin()
+      ]
     }]);
   }
   if (env === 'dev') {
