@@ -32,6 +32,14 @@ const common = function () {
           test: /\.html$/,
           loader: "raw-loader" // loaders: ['raw-loader'] is also perfectly acceptable.
         },
+        {
+          test: require.resolve('jquery'),
+          use: [{
+            loader: 'expose-loader',
+            options: '$'
+          }]
+        },
+
       ]
     },
 
