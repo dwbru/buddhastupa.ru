@@ -10,7 +10,8 @@ const common = function () {
     entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'bundle.js'
+      filename: 'bundle.js',
+      publicPath: "/dist/"
     },
     module: {
       rules: [
@@ -48,9 +49,6 @@ const common = function () {
         $: "jquery",
         jQuery: "jquery"
       }),
-      // new webpack.DefinePlugin({
-      //   'process.env.NODE_ENV': JSON.stringify('prod')
-      // })
     ]
   }
 };

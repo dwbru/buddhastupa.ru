@@ -1,13 +1,14 @@
 import WOW from 'wowjs';
 import $ from 'jquery';
-// import progress from 'progress';
-// import progress from '../js/progress';
-// require('html5shiv');
-// import $ from 'jquery';
-// import jQuery from 'jquery';
 
-// console.log("index.js");
-// console.log("env=" + process.env.NODE_ENV);
+
+
+function log(msg) {
+  if (process.env.NODE_ENV === 'development') {
+    console.log(msg);
+  }
+}
+log('env=' + process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   require('../index.html');
   require('../index_en.html');
@@ -17,30 +18,20 @@ if (process.env.NODE_ENV === 'production') {
 }
 require('../js/progress');
 
-// console.log(location.pathname);
+log(location.pathname);
 const videoId = location.pathname === '/' ? '-ZSX3OwvrRY' : 'ZCwACureW_g';
 
-var player;
-var tag = document.createElement('script');
+let player;
+const tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
+const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function onYouTubeIframeAPIReady() {
-  console.log('YouTube ready');
+  log('YouTube ready');
   player = new YT.Player('popup_player', {
     videoId: videoId,
-    events: {
-      'onReady': onPlayerReady,
-      // 'onStateChange': onPlayerStateChange
-    }
   });
 }
-
-function onPlayerReady(event) {
-  // event.target.playVideo();
-  // console.log("onPlayerReady");
-}
-
 window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
 
 $(document).ready(function () {
