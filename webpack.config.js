@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 // import webpack from 'webpack';
 // const common = require('./configs/common');
 const merge = require('webpack-merge');
